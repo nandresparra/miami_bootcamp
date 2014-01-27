@@ -29,4 +29,13 @@ mean(gDat$lifeExp)
 with(subset(gDat, country="Cambodia"),
   cor(lifeExp, gdpPercap))
 
-       
+(x <- cbind(month.abb, month.name))
+
+(x <- matrix(LETTERS, ncol = 2))
+
+(x <- data.frame(month.num = 1:12, I(month.abb), I(month.name)))
+str(x)
+
+set.seed(1)
+(x <- round(rnorm(8), 2))
+names(x) <- letters[seq_along(x)]       
