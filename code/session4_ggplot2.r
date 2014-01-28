@@ -6,7 +6,7 @@ str(gDat)
 
 p <- ggplot(gDat, aes(x = gdpPercap, y = lifeExp))
 p + geom_point( aes(color =continent)) + scale_x_log10() + 
-  geom_point(alpha = 1/3, size = 3) + geom_smooth()
+  geom_point(alpha = 1/3, size = 3 ) + geom_smooth()
 
 ggplot(gDat, aes(x = continent, y = lifeExp)) + geom_jitter()
 
